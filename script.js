@@ -103,9 +103,12 @@ function checaSequencia (quadrado1,quadrado2,quadrado3) {
 }
 
 function mudarCorDoQuadrado (quadrado1,quadrado2,quadrado3) {
-  quadrado1.style.background= '#159';
-  quadrado2.style.background= '#159';
-  quadrado3.style.background= '#159';
+  quadrado1.style.background= '#04B404';
+  quadrado2.style.background= '#04B404';
+  quadrado3.style.background= '#04B404';;
+  document.getElementById(quadrado1.getElementById).className += 'efeito-1';
+  document.getElementById(quadrado2.getElementById).className += 'efeito-1';
+  document.getElementById(quadrado3.getElementById).className += 'efeito-1';
 }
 
 function mudarVencedor(quadrado) {
@@ -123,3 +126,17 @@ function restart(){
   }
 }
 
+function reiniciar()
+{
+    vencedor = null;
+    vencedorSelecionado.innerHTML = '';
+
+    for (var i = 1; i <= 9; i++) {
+        var quadrado = document.getElementById(i);
+        quadrado.style.background = '#0431B4';
+        quadrado.style.color = '#0431B4';
+        quadrado.innerHTML = '-';
+    }
+
+    mudarJogador('X');
+}
