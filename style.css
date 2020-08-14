@@ -4,19 +4,27 @@ body {
 
 .quadrado {
   text-align: center;
+  position: relative;
+  
   width: 50px;
-  background:#074218;
+  height: 50px;
+  background:#0431B4;
   display: inline-block;
-  padding: 40px;
-  font-size: 64px;
+  padding: 32px;
+  border-radius: 10%;
+  border-width: 6px;
+  border-style: double;
+  border-color: #088A08 ;
+  font-size: 48px;
   margin: 5px;
   cursor: pointer;
-  color:#074218;
+  color:#0431B4;
+  transition: all 400ms ease;
 }
 
 .jogador, .vencedor {
   font-size: 30px;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 button {
@@ -25,5 +33,5 @@ button {
   border: none;
   cursor: pointer;
   padding: 8px;
-  margin-top: 16px;
+  margin-top: 8px;
 }
