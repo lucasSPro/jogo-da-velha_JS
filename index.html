@@ -7,28 +7,82 @@
 </head>
 <body>
   <h1>Jogo da Velha</h1>
+  <p>Essa é mais velha que suas avós Lourdes e Maria José. No século 19,</p>
+  <p>era comum as senhoras se reunirem para jogar noughts and crosses (zeros e cruzes) enquanto bordavam e conversavam.</p>
+  <p>Foi assim que o passatempo virou “jogo das velhas” e depois simplificado para “jogo da velha”.</p>
+  <div class="container">
+    <div class="blocoEscolhe">
+      <label >Lourdes</label>
+          <div id="L1" class="quadradoEmoji"onclick="escolherJogado0(this.id)">
+            &#129491;
+          </div>
+          <div id="L2" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
+            &#129491;&#127999;
+          </div>
+          <div id="L3" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
+            &#129491;&#127998;
+          </div>
+     
+          <div id="L4" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
+            &#129491;&#127997;
+          </div>
+          <div id="L5" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
+            &#129491;&#127996;
+          </div>
+          <div id="L6" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
+            &#129491;&#127995;
+          </div>
+      
+    </div>
 
-  <div>
-    <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
-    <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
-    <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+    <div class="blocoJogo">
+
+      <div>
+        <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+        <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+        <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+      </div>
+      <div>
+        <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+        <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+        <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+      </div>
+      <div>
+        <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+        <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+        <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
+      </div>
+    </div>
+
+
+  <div class="blocoEscolhe">
+    <label >Maria José</label>
+    <div id="MJ1" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
+      &#128117;
+    </div>
+    <div id="MJ2" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
+      &#128117;&#127999;
+    </div>
+    <div id="MJ3" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
+      &#128117;&#127998;
+    </div>
+    <div id="MJ4" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
+      &#128117;&#127997;
+    </div>
+    <div id="MJ5" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
+      &#128117;&#127996;
+    </div>
+    <div id="MJ6" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
+      &#128117;&#127995;
+    </div>
   </div>
-  <div>
-    <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
-    <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
-    <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
-  </div>
-  <div>
-    <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
-    <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
-    <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)" >-</div>
-  </div>
+</div>
 
   <div class="jogador">
-    <label>
+    <label >
       Jogador:
     </label>
-    <label id="jogador-selecionado">
+    <label id="jogador-selecionado" text-size=50px> 
     </label>
   </div>
 
@@ -36,7 +90,7 @@
     <label>
       vencedor:
     </label>
-    <label id="vencedor-selecionado">
+    <label id="vencedor-selecionado" text-size="50px">
     </label>
   </div>
 
@@ -47,6 +101,5 @@
   </div>
 </body>
 <script src="script.js">
-
 </script>
 </html>
