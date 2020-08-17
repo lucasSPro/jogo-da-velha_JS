@@ -23,8 +23,6 @@ function escolherQuadrado(id){
 
   quadrado.innerHTML = jogador;
   quadrado.style.color =  '#fff';
-  console.log(jogador1)
-  console.log(jogador2)
 
   if(jogador === jogador2){
     jogador= jogador1;
@@ -71,7 +69,7 @@ function escolherJogado0 (valor) {
 }
 
 function escolherJogado1 (valor) {
-  console.log(valor);
+  
   if (jogador1 === undefined ){
     alert('Escolhe primeiro o jogador 1 ')
     return
@@ -140,7 +138,6 @@ function trocaJogador2 (valor) {
 function sorteio (){
   if (jogador1 !== null){
     const parOuImpar = Math.floor(Math.random() * 2);
-    console.log(parOuImpar)
     if (parOuImpar === 1){
       jogador = jogador1
       mudarJogador(jogador)
