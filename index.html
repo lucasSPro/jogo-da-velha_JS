@@ -4,12 +4,10 @@
   <title>Jogo da velha</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>Jogo da Velha</h1>
-  <p>Essa é mais velha que suas avós Lourdes e Maria José. No século 19,</p>
-  <p>era comum as senhoras se reunirem para jogar noughts and crosses (zeros e cruzes) enquanto bordavam e conversavam.</p>
-  <p>Foi assim que o passatempo virou “jogo das velhas” e depois simplificado para “jogo da velha”.</p>
   <div class="container">
     <div class="blocoEscolhe">
       <label >Lourdes</label>
@@ -17,20 +15,20 @@
             &#129491;
           </div>
           <div id="L2" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
-            &#129491;&#127999;
+            &#10060;
           </div>
           <div id="L3" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
-            &#129491;&#127998;
+            &#11088;
           </div>
      
           <div id="L4" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
-            &#129491;&#127997;
+            &#127746;
           </div>
           <div id="L5" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
-            &#129491;&#127996;
+            &#127774;
           </div>
           <div id="L6" class="quadradoEmoji" onclick="escolherJogado0(this.id)">
-            &#129491;&#127995;
+            &#127815;
           </div>
       
     </div>
@@ -61,37 +59,33 @@
       &#128117;
     </div>
     <div id="MJ2" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
-      &#128117;&#127999;
+      &#10062;
     </div>
     <div id="MJ3" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
-      &#128117;&#127998;
+      &#11093;
     </div>
     <div id="MJ4" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
-      &#128117;&#127997;
+      &#127757;
     </div>
     <div id="MJ5" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
-      &#128117;&#127996;
+      &#127770;
     </div>
     <div id="MJ6" class="quadradoEmoji" onclick="escolherJogado1(this.id)">
-      &#128117;&#127995;
+      &#127822;
     </div>
   </div>
 </div>
 
   <div class="jogador">
-    <label >
-      Jogador:
-    </label>
-    <label id="jogador-selecionado" text-size=50px> 
-    </label>
+    <label > Quem joga agora: </label>
+    <span id="jogador-selecionado" style='font-size: 35px' > 
+    </span>
   </div>
 
   <div class="vencedor">
-    <label>
-      vencedor:
-    </label>
-    <label id="vencedor-selecionado" text-size="50px">
-    </label>
+    <label> Vencedor: </label>
+    <span id="vencedor-selecionado" style='font-size: 35px' >
+    </span>
   </div>
 
   <div>
@@ -99,6 +93,9 @@
       Nova jogada
     </button>
   </div>
+  <p>Essa é mais velha que suas avós Lourdes e Maria José. No século 19,</p>
+  <p>era comum as senhoras se reunirem para jogar noughts and crosses (zeros e cruzes) enquanto bordavam e conversavam.</p>
+  <p>Foi assim que o passatempo virou “jogo das velhas” e depois simplificado para “jogo da velha”.</p>
 </body>
 <script src="script.js">
 </script>

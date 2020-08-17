@@ -1,8 +1,9 @@
 body {
   text-align: center;
   align-items: center;
-  background:#0431B4;
+  background: rgb(8, 14, 19);
   color: #fff;
+  font-family: 'Roboto Slab', serif;
 }
 span {
   align-items: center;
@@ -31,7 +32,7 @@ span {
   width: 35px;
   height: 35px;
   padding: 10px;
-  background:#0431B4;
+  background: rgb(8, 14, 19);
   border-radius: 10%;
   font-size: 24px;
   cursor: pointer;
@@ -58,28 +59,19 @@ span {
   align-self: center;
 }
 
-
-.efeito-1 {
-  position: relative;
-  background:#088A08;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  padding: 32px;
-  border-radius: 10%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #054e64 ;
-  font-size: 48px;
-  margin: 5px;
-  cursor: pointer;
-  color:#088A08;
+.jogador {
+  margin-top: -30px;
+  text-size-adjust: 50px;
+}
+.vencedor {
+  margin-top: 6px;
 }
 
 button {
   background: #098F2E;
   color: #fff;
   border: none;
+  border-radius: 24px;
   cursor: pointer;
   width: 260px;
   height: 50px;
